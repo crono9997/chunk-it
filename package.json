@@ -1,0 +1,9 @@
+{
+  "name": "chunk-it",
+  "version": "0.1.0",
+  "description": "Event-driven OpenAI (and LLM) streaming client with plugin support.",
+  "main": "index.js",
+  "type": "module",
+  "author": "Jeremy",
+  "license": "MIT"
+}
