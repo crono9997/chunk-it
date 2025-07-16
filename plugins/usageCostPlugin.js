@@ -6,8 +6,6 @@ export function usageCostPlugin({ pricing = {} } = {}) {
     ...pricing
   };
 
-  console.log('Model Pricing:', modelPricing);
-
   return {
     on: {
       "response.completed": (chunk, status, curResult) => {
