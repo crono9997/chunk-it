@@ -1,4 +1,24 @@
 {
+  "gpt-5": {
+    "input": 1.25,
+    "cached": 0.125,
+    "output": 10
+  },
+  "gpt-5-mini": {
+    "input": 0.25,
+    "cached": 0.025,
+    "output": 2
+  },
+  "gpt-5-nano": {
+    "input": 0.05,
+    "cached": 0.005,
+    "output": 0.4
+  },
+  "gpt-5-chat-latest": {
+    "input": 1.25,
+    "cached": 0.125,
+    "output": 10
+  },
   "gpt-4.1": {
     "input": 2,
     "cached": 0.5,
