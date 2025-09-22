@@ -8,7 +8,7 @@ export const ChunkItUI = ({ uri }) => {
     return api;
   };
 
-  api.sendPrompt = async (prompt, previousResponseId) => {
+  api.sendPrompt = async (prompt, previousResponseId, options = {}) => {
     if (!prompt) return;
 
     if (handlers.reset) {
@@ -20,7 +20,7 @@ export const ChunkItUI = ({ uri }) => {
     const response = await fetch(uri, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ prompt, previousResponseId }),
+      body: JSON.stringify({ prompt, previousResponseId, ...options }),
     });
 
     if (!response.body) {
