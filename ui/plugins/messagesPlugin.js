@@ -32,6 +32,7 @@ export const messagesPlugin = ({ options = {}, cb }) => {
         console.log('[SHORTCODE]', data.content);
         addCurrentMessage();
         messages.push({ type: 'shortcode', content: data.content });
+        updateMessages();
       },
       done: data => {
         if (currentMessage.trim()) {
